@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacker Portfolio</title>
+  <title>GhostByte->C Portfolio</title>
   <style>
     body {
       background-color: #111;
-      color: #0f0;
+      color: #b0b;
       font-family: 'Courier New', monospace;
     }
 
     a {
-      color: #0f0;
+      color: #b0b;
       text-decoration: none;
     }
 
     a:hover {
-      color: #00ff00;
+      color: #e0e;
     }
 
     h1 {
-      text-align: center;
       font-size: 3em;
       margin-bottom: 0.5em;
     }
@@ -32,7 +31,7 @@
     }
 
     hr {
-      border: 1px solid #0f0;
+      border: 1px solid #b0b;
       margin: 2em 0;
     }
 
@@ -42,6 +41,36 @@
       padding: 2em;
     }
 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .typing-indicator {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 2px solid #b0b;
+      border-right-color: transparent;
+      border-radius: 50%;
+      animation: typing 1s infinite;
+    }
+
+    @keyframes typing {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(180deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1em;
+    }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -49,7 +78,7 @@
     }
 
     .project {
-      border: 1px solid #0f0;
+      border: 1px solid #b0b;
       padding: 1em;
     }
 
@@ -71,8 +100,15 @@
 </head>
 <body>
   <div class="container">
-    <h1>Hacker Alias</h1>
-    <h2>About Me</h2>
+    <div class="header">
+      <h1>GhostByte->C<span class="typing-indicator"></span></h1>
+      <div>
+        <a href="#about">About Me</a> | <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <hr>
+    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+    <h2 id="about">About Me</h2>
     <p>I'm a skilled hacker and programmer with a passion for breaking into systems, discovering vulnerabilities, and creating secure applications. My expertise includes programming languages, reverse engineering, penetration testing, and more.</p>
     <hr>
     <h2>Projects</h2>
@@ -81,26 +117,24 @@
         <img src="project1.png" alt="Project 1">
         <h3>Project 1</h3>
         <p>Short description of Project 1. Showcasing the skills and technologies used, as well as the outcome.</p>
-        <a href="https://github.com/username/project1">View on GitHub</a>
-      </div>
-      <div class="project">
-        <img src="project2.png" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Short description of Project 2. Showcasing the skills and technologies used, as well as the outcome.</p>
-        <a href="https://github.com/username/project2">View on GitHub</a>
-      </div>
-      <!-- Add more projects as needed -->
-    </div>
-    <hr>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hacker@example.com">hacker@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/username">username</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/username/">username</a></p>
-    <div class="footer">
-      <p>>Copyright © 2023 Hacker Alias</p>
-    </div>
+    <a href="https://github.com/username/project1">View on GitHub</a>
   </div>
+  <div class="project">
+    <img src="project2.png" alt="Project 2">
+    <h3>Project 2</h3>
+    <p>Short description of Project 2. Showcasing the skills and technologies used, as well as the outcome.</p>
+    <a href="https://github.com/username/project2">View on GitHub</a>
+  </div>
+  <!-- Add more projects as needed -->
+	</div>
+	<hr>
+	<h2 id="contact">Contact</h2>
+	<p>Email: <a href="mailto:ghostbyte@example.com">ghostbyte@example.com</a></p>
+	<p>GitHub: <a href="https://github.com/username">username</a></p>
+	<p>LinkedIn: <a href="https://www.linkedin.com/in/username/">username</a></p>
+	<div class="footer">
+	  <p>Copyright © 2023 GhostByte->C</p>
+	</div>
+</div>
 </body>
 </html>
-	  
-
